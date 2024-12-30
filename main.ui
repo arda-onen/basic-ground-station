@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Tahoma</family>
+    <pointsize>16</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#1f2833;
+color:#ffffff;
+font: &quot;Tahoma&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>520</y>
+      <width>160</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #4a4f66;
+}
+
+QPushButton:hover{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #45a29e;
+}
+
+QPushButton:pressed{
+	background-color:#1f2833;
+	border:6px solid;
+	border-radius:10px;
+	border-color: #66fcf1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Start Server</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>620</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#0b0c10;
+border: 5px solid #4a4f66;
+border-radius:10px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="cameraLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>600</width>
+       <height>480</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0px;</string>
+     </property>
+     <property name="text">
+      <string>Camera</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>500</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#0b0c10;
+border: 5px solid #4a4f66;
+border-radius:10px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="numberLabel">
+     <property name="geometry">
+      <rect>
+       <x>24</x>
+       <y>25</y>
+       <width>461</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px;</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>219</y>
+      <width>500</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#0b0c10;
+border: 5px solid #4a4f66;
+border-radius:10px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>481</width>
+       <height>481</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px;</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>160</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #4a4f66;
+}
+
+QPushButton:hover{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #45a29e;
+}
+
+QPushButton:pressed{
+	background-color:#1f2833;
+	border:6px solid;
+	border-radius:10px;
+	border-color: #66fcf1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Stop Server</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="listenButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>520</y>
+      <width>160</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #4a4f66;
+}
+
+QPushButton:hover{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #45a29e;
+}
+
+QPushButton:pressed{
+	background-color:#1f2833;
+	border:6px solid;
+	border-radius:10px;
+	border-color: #66fcf1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Start Listening</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>160</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #4a4f66;
+}
+
+QPushButton:hover{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #45a29e;
+}
+
+QPushButton:pressed{
+	background-color:#1f2833;
+	border:6px solid;
+	border-radius:10px;
+	border-color: #66fcf1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Clear Console</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resolutionButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>580</y>
+      <width>160</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #4a4f66;
+}
+
+QPushButton:hover{
+	background-color:#0b0c10;
+	border:4px solid;
+	border-radius:6px;
+	border-color: #45a29e;
+}
+
+QPushButton:pressed{
+	background-color:#1f2833;
+	border:6px solid;
+	border-radius:10px;
+	border-color: #66fcf1;
+}</string>
+    </property>
+    <property name="text">
+     <string>Send Resolution Values </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#0b0c10;
+alternate-background-color: rgb(31, 40, 51);
+color: #ffffff;
+selection-color: rgb(102, 252, 241);
+
+
+
+
+QMenuBar::item{
+	background-color:#ffffff;
+}
+
+QMenuBar::item:selected{
+	background-color:#ffffff;
+}</string>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuIP_Adress">
+     <property name="title">
+      <string>IP Adress</string>
+     </property>
+     <addaction name="actionAuto"/>
+     <addaction name="actionLocalhost"/>
+    </widget>
+    <widget class="QMenu" name="menuPort">
+     <property name="title">
+      <string>Port</string>
+     </property>
+     <addaction name="action9999"/>
+     <addaction name="action9990"/>
+     <addaction name="action9900"/>
+     <addaction name="action9000"/>
+     <addaction name="action8000"/>
+    </widget>
+    <widget class="QMenu" name="menuResolution">
+     <property name="title">
+      <string>Resolution</string>
+     </property>
+     <addaction name="action600x480"/>
+     <addaction name="action800x600"/>
+     <addaction name="action1024x768"/>
+     <addaction name="action1680x1050"/>
+    </widget>
+    <addaction name="menuIP_Adress"/>
+    <addaction name="menuPort"/>
+    <addaction name="menuResolution"/>
+   </widget>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color:#0b0c10</string>
+   </property>
+  </widget>
+  <action name="actionAuto">
+   <property name="text">
+    <string>Auto</string>
+   </property>
+  </action>
+  <action name="actionLocalhost">
+   <property name="text">
+    <string>Localhost</string>
+   </property>
+  </action>
+  <action name="action9999">
+   <property name="text">
+    <string>9999</string>
+   </property>
+  </action>
+  <action name="action9990">
+   <property name="text">
+    <string>9990</string>
+   </property>
+  </action>
+  <action name="action9900">
+   <property name="text">
+    <string>9900</string>
+   </property>
+  </action>
+  <action name="action9000">
+   <property name="text">
+    <string>9000</string>
+   </property>
+  </action>
+  <action name="action8000">
+   <property name="text">
+    <string>8000</string>
+   </property>
+  </action>
+  <action name="action600x480">
+   <property name="text">
+    <string>600x480</string>
+   </property>
+  </action>
+  <action name="action800x600">
+   <property name="text">
+    <string>800x600</string>
+   </property>
+  </action>
+  <action name="action1024x768">
+   <property name="text">
+    <string>1024x768</string>
+   </property>
+  </action>
+  <action name="action1680x1050">
+   <property name="text">
+    <string>1680x1050</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
